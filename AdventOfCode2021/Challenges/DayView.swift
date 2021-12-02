@@ -19,34 +19,36 @@ struct DayView: View {
 
     var body: some View {
 
-        VStack {
+        NavigationView {
+            VStack {
 
-            Text("Day 1")
-                .font(.largeTitle)
-                .bold()
-                .padding()
+                Text("Day 1")
+                    .font(.largeTitle)
+                    .bold()
+                    .padding()
 
-            Spacer()
+                Spacer()
 
-            Text("Output: \(challenge.answer)")
-                .font(.largeTitle)
-                .opacity(challenge.answer.isEmpty ? 0 : 1)
+                Text("Output: \(challenge.answer)")
+                    .font(.largeTitle)
+                    .opacity(challenge.answer.isEmpty ? 0 : 1)
 
-            Button(action: {
-                challenge.part1()
-            }) {
-                RunButtonView(title: "Part 1")
+                Button(action: {
+                    challenge.part1()
+                }) {
+                    RunButtonView(title: "Part 1")
+                }
+
+                Button(action: {
+                    challenge.part2()
+                }) {
+                    RunButtonView(title: "Part 2")
+                }
+
+                Spacer()
             }
-
-            Button(action: {
-                challenge.part2()
-            }) {
-                RunButtonView(title: "Part 2")
-            }
-
-            Spacer()
+            .navigationBarHidden(true)
         }
-        .navigationBarHidden(true)
     }
 }
 
