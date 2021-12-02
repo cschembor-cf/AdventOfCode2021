@@ -7,11 +7,10 @@
 
 import Foundation
 
-class Day1Challenge: ObservableObject {
-    @Published var answer: String = ""
-
-    func part1() {
-        let lines = readFile("input")
+class Day1Challenge: Challenge {
+    
+    override func part1() {
+        let lines = Utils.readFile("input")
         var numIncreases = 0
         for i in 0..<lines.count-1 {
             if Int(lines[i+1])! > Int(lines[i])! {
@@ -22,14 +21,14 @@ class Day1Challenge: ObservableObject {
         answer = "\(numIncreases)"
     }
 
-    func part2() {
-        let lines = readFile("input")
+    override func part2() {
+        let lines = Utils.readFile("input")
         var numIncreases = 0
         var prevSum = 0
         for i in 0..<lines.count-2 {
-            let currSum = lines[i...i+2].reduce(0) { acc, curr in
-                acc + Int(curr)!
-            }
+            let currSum = lines[i...i+2]
+                .map { Int($0)! }
+                .reduce(0, +)
 
             guard prevSum > 0 else {
                 prevSum = currSum
@@ -41,11 +40,5 @@ class Day1Challenge: ObservableObject {
         }
 
         answer = "\(numIncreases)"
-    }
-
-    private func readFile(_ name: String) -> [String.SubSequence] {
-        let path = Bundle.main.path(forResource: "input", ofType: "txt")
-        let fileContents = try! String(contentsOfFile: path!, encoding: String.Encoding.utf8)
-        return fileContents.split(whereSeparator: \.isNewline)
     }
 }

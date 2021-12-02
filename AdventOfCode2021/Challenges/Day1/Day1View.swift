@@ -12,48 +12,7 @@ struct Day1View: View {
 
     var body: some View {
 
-        VStack {
-            Spacer()
-            Button(action: {
-                challenge.part1()
-            }) {
-                RunButtonView(title: "Part 1")
-            }
-
-            if !challenge.answer.isEmpty {
-                Text("Output: \(challenge.answer)")
-                    .font(.largeTitle)
-            }
-
-            Button(action: {
-                challenge.part2()
-            }) {
-                RunButtonView(title: "Part 2")
-            }
-
-            Spacer()
-        }
-    }
-}
-
-struct RunButtonView: View {
-
-    private let title: String
-    init(title: String) {
-        self.title = title
-    }
-
-    var body: some View {
-
-        ZStack {
-            Capsule(style: .continuous)
-                .fill(.blue)
-                .frame(width: 150, height: 75, alignment: .center)
-
-            Text(title)
-                .font(.largeTitle)
-                .foregroundColor(.white)
-        }
+        DayView(dayNumber: 1, challenge: challenge)
     }
 }
 

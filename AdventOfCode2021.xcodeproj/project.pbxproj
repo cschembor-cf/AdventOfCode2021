@@ -18,6 +18,9 @@
 		D206B7C32757194B0025FE55 /* Day1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D206B7C22757194B0025FE55 /* Day1View.swift */; };
 		D206B7C5275737EB0025FE55 /* Day1Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D206B7C4275737EB0025FE55 /* Day1Challenge.swift */; };
 		D206B7C7275739940025FE55 /* input.txt in Resources */ = {isa = PBXBuildFile; fileRef = D206B7C6275739940025FE55 /* input.txt */; };
+		D2F41590275867D800C4DE58 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F4158F275867D800C4DE58 /* Utils.swift */; };
+		D2F4159227586B2600C4DE58 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F4159127586B2600C4DE58 /* Challenge.swift */; };
+		D2F415942758704800C4DE58 /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F415932758704800C4DE58 /* DayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 		D206B7C22757194B0025FE55 /* Day1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day1View.swift; sourceTree = "<group>"; };
 		D206B7C4275737EB0025FE55 /* Day1Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day1Challenge.swift; sourceTree = "<group>"; };
 		D206B7C6275739940025FE55 /* input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = input.txt; path = ../../../../../../Desktop/input.txt; sourceTree = "<group>"; };
+		D2F4158F275867D800C4DE58 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		D2F4159127586B2600C4DE58 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
+		D2F415932758704800C4DE58 /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,7 @@
 				D206B796275716420025FE55 /* StartView.swift */,
 				D206B798275716450025FE55 /* Assets.xcassets */,
 				D206B79A275716450025FE55 /* Preview Content */,
+				D2F4158F275867D800C4DE58 /* Utils.swift */,
 			);
 			path = AdventOfCode2021;
 			sourceTree = "<group>";
@@ -141,6 +148,8 @@
 			children = (
 				D206B7BF275718DF0025FE55 /* Day1 */,
 				D206B7C0275718F90025FE55 /* ChallengesView.swift */,
+				D2F4159127586B2600C4DE58 /* Challenge.swift */,
+				D2F415932758704800C4DE58 /* DayView.swift */,
 			);
 			path = Challenges;
 			sourceTree = "<group>";
@@ -286,11 +295,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2F4159227586B2600C4DE58 /* Challenge.swift in Sources */,
+				D2F415942758704800C4DE58 /* DayView.swift in Sources */,
 				D206B7C1275718F90025FE55 /* ChallengesView.swift in Sources */,
 				D206B7C5275737EB0025FE55 /* Day1Challenge.swift in Sources */,
 				D206B797275716420025FE55 /* StartView.swift in Sources */,
 				D206B795275716420025FE55 /* AdventOfCode2021App.swift in Sources */,
 				D206B7C32757194B0025FE55 /* Day1View.swift in Sources */,
+				D2F41590275867D800C4DE58 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

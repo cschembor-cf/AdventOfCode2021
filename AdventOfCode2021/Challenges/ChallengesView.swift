@@ -15,6 +15,7 @@ struct ChallengesView: View {
                 Day1View()
             }
         }
+        .navigationBarHidden(true)
     }
 }
 
