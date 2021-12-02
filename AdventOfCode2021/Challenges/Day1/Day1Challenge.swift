@@ -10,7 +10,7 @@ import Foundation
 class Day1Challenge: Challenge {
     
     override func part1() {
-        let lines = Utils.readFile("input")
+        let lines = Utils.readFile("day1_input")
         var numIncreases = 0
         for i in 0..<lines.count-1 {
             if Int(lines[i+1])! > Int(lines[i])! {
@@ -22,7 +22,7 @@ class Day1Challenge: Challenge {
     }
 
     override func part2() {
-        let lines = Utils.readFile("input")
+        let lines = Utils.readFile("day1_input")
         var numIncreases = 0
         var prevSum = 0
         for i in 0..<lines.count-2 {

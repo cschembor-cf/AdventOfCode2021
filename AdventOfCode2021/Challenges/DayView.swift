@@ -22,7 +22,7 @@ struct DayView: View {
         NavigationView {
             VStack {
 
-                Text("Day 1")
+                Text("Day \(dayNumber)")
                     .font(.largeTitle)
                     .bold()
                     .padding()
