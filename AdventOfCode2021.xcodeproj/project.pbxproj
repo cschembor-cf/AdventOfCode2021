@@ -26,6 +26,7 @@
 		D2F415A42758FECF00C4DE58 /* Day2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F415A32758FECF00C4DE58 /* Day2View.swift */; };
 		D2F415B0275953BB00C4DE58 /* Day3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F415AF275953BB00C4DE58 /* Day3View.swift */; };
 		D2F415B2275953D300C4DE58 /* Day3Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F415B1275953D300C4DE58 /* Day3Challenge.swift */; };
+		D2F415B7275A5C0300C4DE58 /* day3_input.txt in Resources */ = {isa = PBXBuildFile; fileRef = D2F415B6275A5C0300C4DE58 /* day3_input.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		D2F415A32758FECF00C4DE58 /* Day2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day2View.swift; sourceTree = "<group>"; };
 		D2F415AF275953BB00C4DE58 /* Day3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day3View.swift; sourceTree = "<group>"; };
 		D2F415B1275953D300C4DE58 /* Day3Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day3Challenge.swift; sourceTree = "<group>"; };
+		D2F415B6275A5C0300C4DE58 /* day3_input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = day3_input.txt; path = ../../../../../../Desktop/day3_input.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 		D2F415AE2759539C00C4DE58 /* Day3 */ = {
 			isa = PBXGroup;
 			children = (
+				D2F415B6275A5C0300C4DE58 /* day3_input.txt */,
 				D2F415B1275953D300C4DE58 /* Day3Challenge.swift */,
 				D2F415AF275953BB00C4DE58 /* Day3View.swift */,
 			);
@@ -299,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2F415B7275A5C0300C4DE58 /* day3_input.txt in Resources */,
 				D206B7C7275739940025FE55 /* day1_input.txt in Resources */,
 				D206B79C275716450025FE55 /* Preview Assets.xcassets in Resources */,
 				D2F4159C2758733700C4DE58 /* challenge_screen.png in Resources */,

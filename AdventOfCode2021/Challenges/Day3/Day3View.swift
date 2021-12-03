@@ -12,7 +12,7 @@ struct Day3View: View {
 
     var body: some View {
 
-        DayView(dayNumber: 2, challenge: challenge)
+        DayView(dayNumber: 3, challenge: challenge)
     }
 }
 
