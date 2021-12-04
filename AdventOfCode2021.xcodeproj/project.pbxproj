@@ -16,6 +16,9 @@
 		D206B7C32757194B0025FE55 /* Day1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D206B7C22757194B0025FE55 /* Day1View.swift */; };
 		D206B7C5275737EB0025FE55 /* Day1Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D206B7C4275737EB0025FE55 /* Day1Challenge.swift */; };
 		D206B7C7275739940025FE55 /* day1_input.txt in Resources */ = {isa = PBXBuildFile; fileRef = D206B7C6275739940025FE55 /* day1_input.txt */; };
+		D27B5C88275BC5BF00AEC16F /* day4_input.txt in Resources */ = {isa = PBXBuildFile; fileRef = D27B5C87275BC5BF00AEC16F /* day4_input.txt */; };
+		D27B5C8A275BC7B600AEC16F /* Day4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27B5C89275BC7B600AEC16F /* Day4View.swift */; };
+		D27B5C8C275BC7C600AEC16F /* Day4Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27B5C8B275BC7C600AEC16F /* Day4Challenge.swift */; };
 		D2F41590275867D800C4DE58 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F4158F275867D800C4DE58 /* Utils.swift */; };
 		D2F4159227586B2600C4DE58 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F4159127586B2600C4DE58 /* Challenge.swift */; };
 		D2F415942758704800C4DE58 /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F415932758704800C4DE58 /* DayView.swift */; };
@@ -59,6 +62,9 @@
 		D206B7C22757194B0025FE55 /* Day1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day1View.swift; sourceTree = "<group>"; };
 		D206B7C4275737EB0025FE55 /* Day1Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day1Challenge.swift; sourceTree = "<group>"; };
 		D206B7C6275739940025FE55 /* day1_input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = day1_input.txt; path = ../../../../../../Desktop/day1_input.txt; sourceTree = "<group>"; };
+		D27B5C87275BC5BF00AEC16F /* day4_input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = day4_input.txt; path = ../../../../../../Desktop/day4_input.txt; sourceTree = "<group>"; };
+		D27B5C89275BC7B600AEC16F /* Day4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Day4View.swift; path = ../../../../../../Day4View.swift; sourceTree = "<group>"; };
+		D27B5C8B275BC7C600AEC16F /* Day4Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day4Challenge.swift; sourceTree = "<group>"; };
 		D2F4158F275867D800C4DE58 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		D2F4159127586B2600C4DE58 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 		D2F415932758704800C4DE58 /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
@@ -152,6 +158,7 @@
 				D206B7BF275718DF0025FE55 /* Day1 */,
 				D2F4159E2758FD2900C4DE58 /* Day2 */,
 				D2F415AE2759539C00C4DE58 /* Day3 */,
+				D27B5C86275BC5AE00AEC16F /* Day4 */,
 				D206B7C0275718F90025FE55 /* ChallengesView.swift */,
 				D2F4159127586B2600C4DE58 /* Challenge.swift */,
 				D2F415932758704800C4DE58 /* DayView.swift */,
@@ -167,6 +174,16 @@
 				D206B7C4275737EB0025FE55 /* Day1Challenge.swift */,
 			);
 			path = Day1;
+			sourceTree = "<group>";
+		};
+		D27B5C86275BC5AE00AEC16F /* Day4 */ = {
+			isa = PBXGroup;
+			children = (
+				D27B5C87275BC5BF00AEC16F /* day4_input.txt */,
+				D27B5C8B275BC7C600AEC16F /* Day4Challenge.swift */,
+				D27B5C89275BC7B600AEC16F /* Day4View.swift */,
+			);
+			path = Day4;
 			sourceTree = "<group>";
 		};
 		D2F415952758722900C4DE58 /* Screenshots */ = {
@@ -305,6 +322,7 @@
 				D2F415B7275A5C0300C4DE58 /* day3_input.txt in Resources */,
 				D206B7C7275739940025FE55 /* day1_input.txt in Resources */,
 				D206B79C275716450025FE55 /* Preview Assets.xcassets in Resources */,
+				D27B5C88275BC5BF00AEC16F /* day4_input.txt in Resources */,
 				D2F4159C2758733700C4DE58 /* challenge_screen.png in Resources */,
 				D2F415A02758FD5300C4DE58 /* day2_input.txt in Resources */,
 				D2F4159D2758733700C4DE58 /* days_screen.png in Resources */,
@@ -338,7 +356,9 @@
 				D2F415A22758FD7300C4DE58 /* Day2Challenge.swift in Sources */,
 				D2F415B0275953BB00C4DE58 /* Day3View.swift in Sources */,
 				D206B7C1275718F90025FE55 /* ChallengesView.swift in Sources */,
+				D27B5C8A275BC7B600AEC16F /* Day4View.swift in Sources */,
 				D206B7C5275737EB0025FE55 /* Day1Challenge.swift in Sources */,
+				D27B5C8C275BC7C600AEC16F /* Day4Challenge.swift in Sources */,
 				D2F415B2275953D300C4DE58 /* Day3Challenge.swift in Sources */,
 				D206B797275716420025FE55 /* StartView.swift in Sources */,
 				D2F415A42758FECF00C4DE58 /* Day2View.swift in Sources */,

@@ -20,6 +20,9 @@ struct ChallengesView: View {
             NavigationLink("Day 3") {
                 Day3View()
             }
+            NavigationLink("Day 4") {
+                Day4View()
+            }
         }
         .navigationBarHidden(true)
     }
