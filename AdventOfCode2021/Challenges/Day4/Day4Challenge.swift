@@ -33,22 +33,39 @@ class Day4Challenge: Challenge {
 
     override func part1() {
         let (drawnNumbers, boards) = parseInput(fileName: "day4_input")
+        // 🤢
         for num in drawnNumbers {
             for board in boards {
-                for i in 0..<board.board.count {
-                    for j in 0..<board.board[i].count {
-                        if board.board[i][j].number == num {
-                            board.board[i][j].setSelected()
-                        }
-                    }
-                }
-
+                markBoard(board, number: num)
                 if board.hasBingo {
                     answer = "\(getFinalValue(for: board, with: num))"
                     return
                 }
             }
         }
+    }
+
+    override func part2() {
+        let (drawnNumbers, boards) = parseInput(fileName: "day4_input")
+        var lastBoardToBingo: BingoBoard? = nil
+        var lastNum: Int? = nil
+        var filteredBoards = boards
+        while !filteredBoards.isEmpty {
+            for num in drawnNumbers {
+                for board in filteredBoards {
+                    markBoard(board, number: num)
+                    if board.hasBingo {
+                        lastBoardToBingo = board
+                        lastNum = num
+                        filteredBoards.removeAll { b in
+                            b == board
+                        }
+                    }
+                }
+            }
+        }
+
+        answer = "\(getFinalValue(for: lastBoardToBingo!, with: lastNum!))"
     }
 
     private func getFinalValue(for board: BingoBoard, with winningNumber: Int) -> Int {
@@ -60,6 +77,16 @@ class Day4Challenge: Challenge {
             }
 
         return unmarkedSum * winningNumber
+    }
+
+    private func markBoard(_ board: BingoBoard, number: Int) {
+        for i in 0..<board.board.count {
+            for j in 0..<board.board[i].count {
+                if board.board[i][j].number == number {
+                    board.board[i][j].setSelected()
+                }
+            }
+        }
     }
 
     private func parseInput(fileName: String) -> (drawnNumbers: [Int], boards: [BingoBoard]) {
@@ -82,7 +109,11 @@ class Day4Challenge: Challenge {
         return (drawnNumbers, boards)
     }
 
-    class BingoBoard {
+    class BingoBoard: Equatable {
+        static func == (lhs: Day4Challenge.BingoBoard, rhs: Day4Challenge.BingoBoard) -> Bool {
+            lhs.board == rhs.board
+        }
+
         var board: [[BingoNumber]] = []
 
         func addRow(_ row: [Int]) {
@@ -126,7 +157,7 @@ class Day4Challenge: Challenge {
             self.board[4][row].isSelected
         }
 
-        struct BingoNumber {
+        struct BingoNumber: Equatable {
             let number: Int
             var isSelected: Bool
 
