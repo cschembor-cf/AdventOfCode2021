@@ -30,39 +30,13 @@ class Day5Challenge: Challenge {
             let horizontal = line.start.y == line.end.y
             let vertical = line.start.x == line.end.x
             guard horizontal || vertical else { continue }
-            if horizontal {
-                let y = line.start.y
-                let (start, end) = line.start.x < line.end.x
-                    ? (line.start.x, line.end.x)
-                    : (line.end.x, line.start.x)
-
-                for i in start...end {
-                    let curr = Coordinate(x: i, y: y)
-                    if coordinatesVisited.contains(curr) {
-                        guard !coordinatesOverlapped.contains(curr) else { continue }
-                        coordinatesOverlapped.insert(curr)
-                        print("Horizontal -> \(curr)")
-                        overlappingCoordinates += 1
-                    } else {
-                        coordinatesVisited.insert(.init(x: i, y: y))
-                    }
-                }
-            } else {
-                let x = line.start.x
-                let (start, end) = line.start.y < line.end.y
-                    ? (line.start.y, line.end.y)
-                    : (line.end.y, line.start.y)
-
-                for j in start...end {
-                    let curr = Coordinate(x: x, y: j)
-                    if coordinatesVisited.contains(.init(x: x, y: j)) {
-                        guard !coordinatesOverlapped.contains(curr) else { continue }
-                        coordinatesOverlapped.insert(curr)
-                        print("Vertical -> \(curr)")
-                        overlappingCoordinates += 1
-                    } else {
-                        coordinatesVisited.insert(.init(x: x, y: j))
-                    }
+            for coordinate in line.coordinates {
+                if coordinatesVisited.contains(coordinate) {
+                    guard !coordinatesOverlapped.contains(coordinate) else { continue }
+                    coordinatesOverlapped.insert(coordinate)
+                    overlappingCoordinates += 1
+                } else {
+                    coordinatesVisited.insert(coordinate)
                 }
             }
         }
@@ -85,14 +59,43 @@ class Day5Challenge: Challenge {
 
         return output
     }
+}
 
-    struct Line {
-        let start: Coordinate
-        let end: Coordinate
-    }
+fileprivate struct Line {
+    let start: Coordinate
+    let end: Coordinate
+}
 
-    struct Coordinate: Equatable, Hashable {
-        let x: Int
-        let y: Int
+fileprivate struct Coordinate: Equatable, Hashable {
+    let x: Int
+    let y: Int
+}
+
+fileprivate extension Line {
+    var coordinates: [Coordinate] {
+        var _coords: [Coordinate] = []
+        let horizontal = self.start.y == self.end.y
+        let vertical = self.start.x == self.end.x
+        if horizontal {
+            let y = self.start.y
+            let (start, end) = self.start.x < self.end.x
+            ? (self.start.x, self.end.x)
+            : (self.end.x, self.start.x)
+
+            for i in start...end {
+                _coords.append(.init(x: i, y: y))
+            }
+        } else if vertical {
+            let x = self.start.x
+            let (start, end) = self.start.y < self.end.y
+            ? (self.start.y, self.end.y)
+            : (self.end.y, self.start.y)
+
+            for j in start...end {
+                _coords.append(.init(x: x, y: j))
+            }
+        }
+
+        return _coords
     }
 }
