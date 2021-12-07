@@ -16,6 +16,9 @@
 		D206B7C32757194B0025FE55 /* Day1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D206B7C22757194B0025FE55 /* Day1View.swift */; };
 		D206B7C5275737EB0025FE55 /* Day1Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D206B7C4275737EB0025FE55 /* Day1Challenge.swift */; };
 		D206B7C7275739940025FE55 /* day1_input.txt in Resources */ = {isa = PBXBuildFile; fileRef = D206B7C6275739940025FE55 /* day1_input.txt */; };
+		D217AE95275E7BF4007E09E4 /* Day6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D217AE94275E7BF4007E09E4 /* Day6View.swift */; };
+		D217AE97275E7C06007E09E4 /* Day6Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D217AE96275E7C06007E09E4 /* Day6Challenge.swift */; };
+		D217AE99275EB8FC007E09E4 /* day6_input.txt in Resources */ = {isa = PBXBuildFile; fileRef = D217AE98275EB8FC007E09E4 /* day6_input.txt */; };
 		D27B5C88275BC5BF00AEC16F /* day4_input.txt in Resources */ = {isa = PBXBuildFile; fileRef = D27B5C87275BC5BF00AEC16F /* day4_input.txt */; };
 		D27B5C8A275BC7B600AEC16F /* Day4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27B5C89275BC7B600AEC16F /* Day4View.swift */; };
 		D27B5C8C275BC7C600AEC16F /* Day4Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27B5C8B275BC7C600AEC16F /* Day4Challenge.swift */; };
@@ -65,6 +68,9 @@
 		D206B7C22757194B0025FE55 /* Day1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day1View.swift; sourceTree = "<group>"; };
 		D206B7C4275737EB0025FE55 /* Day1Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day1Challenge.swift; sourceTree = "<group>"; };
 		D206B7C6275739940025FE55 /* day1_input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = day1_input.txt; path = ../../../../../../Desktop/day1_input.txt; sourceTree = "<group>"; };
+		D217AE94275E7BF4007E09E4 /* Day6View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day6View.swift; sourceTree = "<group>"; };
+		D217AE96275E7C06007E09E4 /* Day6Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day6Challenge.swift; sourceTree = "<group>"; };
+		D217AE98275EB8FC007E09E4 /* day6_input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = day6_input.txt; path = ../../../../../../Desktop/day6_input.txt; sourceTree = "<group>"; };
 		D27B5C87275BC5BF00AEC16F /* day4_input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = day4_input.txt; path = ../../../../../../Desktop/day4_input.txt; sourceTree = "<group>"; };
 		D27B5C89275BC7B600AEC16F /* Day4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Day4View.swift; path = ../../../../../../Day4View.swift; sourceTree = "<group>"; };
 		D27B5C8B275BC7C600AEC16F /* Day4Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day4Challenge.swift; sourceTree = "<group>"; };
@@ -166,6 +172,7 @@
 				D2F415AE2759539C00C4DE58 /* Day3 */,
 				D27B5C86275BC5AE00AEC16F /* Day4 */,
 				D2D53D6A275D1FC00016F5D4 /* Day5 */,
+				D217AE93275E7BDC007E09E4 /* Day6 */,
 				D206B7C0275718F90025FE55 /* ChallengesView.swift */,
 				D2F4159127586B2600C4DE58 /* Challenge.swift */,
 				D2F415932758704800C4DE58 /* DayView.swift */,
@@ -181,6 +188,16 @@
 				D206B7C4275737EB0025FE55 /* Day1Challenge.swift */,
 			);
 			path = Day1;
+			sourceTree = "<group>";
+		};
+		D217AE93275E7BDC007E09E4 /* Day6 */ = {
+			isa = PBXGroup;
+			children = (
+				D217AE98275EB8FC007E09E4 /* day6_input.txt */,
+				D217AE96275E7C06007E09E4 /* Day6Challenge.swift */,
+				D217AE94275E7BF4007E09E4 /* Day6View.swift */,
+			);
+			path = Day6;
 			sourceTree = "<group>";
 		};
 		D27B5C86275BC5AE00AEC16F /* Day4 */ = {
@@ -341,6 +358,7 @@
 				D206B7C7275739940025FE55 /* day1_input.txt in Resources */,
 				D206B79C275716450025FE55 /* Preview Assets.xcassets in Resources */,
 				D27B5C88275BC5BF00AEC16F /* day4_input.txt in Resources */,
+				D217AE99275EB8FC007E09E4 /* day6_input.txt in Resources */,
 				D2F4159C2758733700C4DE58 /* challenge_screen.png in Resources */,
 				D2F415A02758FD5300C4DE58 /* day2_input.txt in Resources */,
 				D2F4159D2758733700C4DE58 /* days_screen.png in Resources */,
@@ -375,6 +393,7 @@
 				D2F415B0275953BB00C4DE58 /* Day3View.swift in Sources */,
 				D2D53D70275D200D0016F5D4 /* Day5Challenge.swift in Sources */,
 				D206B7C1275718F90025FE55 /* ChallengesView.swift in Sources */,
+				D217AE95275E7BF4007E09E4 /* Day6View.swift in Sources */,
 				D27B5C8A275BC7B600AEC16F /* Day4View.swift in Sources */,
 				D206B7C5275737EB0025FE55 /* Day1Challenge.swift in Sources */,
 				D27B5C8C275BC7C600AEC16F /* Day4Challenge.swift in Sources */,
@@ -383,6 +402,7 @@
 				D2F415A42758FECF00C4DE58 /* Day2View.swift in Sources */,
 				D206B795275716420025FE55 /* AdventOfCode2021App.swift in Sources */,
 				D206B7C32757194B0025FE55 /* Day1View.swift in Sources */,
+				D217AE97275E7C06007E09E4 /* Day6Challenge.swift in Sources */,
 				D2F41590275867D800C4DE58 /* Utils.swift in Sources */,
 				D2D53D6E275D1FE40016F5D4 /* Day5View.swift in Sources */,
 			);
