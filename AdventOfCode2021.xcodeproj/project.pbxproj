@@ -25,6 +25,9 @@
 		D2D53D6C275D1FD20016F5D4 /* day5_input.txt in Resources */ = {isa = PBXBuildFile; fileRef = D2D53D6B275D1FD20016F5D4 /* day5_input.txt */; };
 		D2D53D6E275D1FE40016F5D4 /* Day5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D53D6D275D1FE40016F5D4 /* Day5View.swift */; };
 		D2D53D70275D200D0016F5D4 /* Day5Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D53D6F275D200D0016F5D4 /* Day5Challenge.swift */; };
+		D2DB0DEF275FF3C800C9799F /* day7_input.txt in Resources */ = {isa = PBXBuildFile; fileRef = D2DB0DEE275FF3C800C9799F /* day7_input.txt */; };
+		D2DB0DF1275FF3D700C9799F /* Day7View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB0DF0275FF3D700C9799F /* Day7View.swift */; };
+		D2DB0DF3275FF3E600C9799F /* Day7Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB0DF2275FF3E600C9799F /* Day7Challenge.swift */; };
 		D2F41590275867D800C4DE58 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F4158F275867D800C4DE58 /* Utils.swift */; };
 		D2F4159227586B2600C4DE58 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F4159127586B2600C4DE58 /* Challenge.swift */; };
 		D2F415942758704800C4DE58 /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F415932758704800C4DE58 /* DayView.swift */; };
@@ -77,6 +80,9 @@
 		D2D53D6B275D1FD20016F5D4 /* day5_input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = day5_input.txt; path = ../../../../../../Desktop/day5_input.txt; sourceTree = "<group>"; };
 		D2D53D6D275D1FE40016F5D4 /* Day5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day5View.swift; sourceTree = "<group>"; };
 		D2D53D6F275D200D0016F5D4 /* Day5Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day5Challenge.swift; sourceTree = "<group>"; };
+		D2DB0DEE275FF3C800C9799F /* day7_input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = day7_input.txt; path = ../../../../../../Desktop/day7_input.txt; sourceTree = "<group>"; };
+		D2DB0DF0275FF3D700C9799F /* Day7View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day7View.swift; sourceTree = "<group>"; };
+		D2DB0DF2275FF3E600C9799F /* Day7Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day7Challenge.swift; sourceTree = "<group>"; };
 		D2F4158F275867D800C4DE58 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		D2F4159127586B2600C4DE58 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 		D2F415932758704800C4DE58 /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
@@ -173,6 +179,7 @@
 				D27B5C86275BC5AE00AEC16F /* Day4 */,
 				D2D53D6A275D1FC00016F5D4 /* Day5 */,
 				D217AE93275E7BDC007E09E4 /* Day6 */,
+				D2DB0DED275FF3B700C9799F /* Day7 */,
 				D206B7C0275718F90025FE55 /* ChallengesView.swift */,
 				D2F4159127586B2600C4DE58 /* Challenge.swift */,
 				D2F415932758704800C4DE58 /* DayView.swift */,
@@ -218,6 +225,16 @@
 				D2D53D6D275D1FE40016F5D4 /* Day5View.swift */,
 			);
 			path = Day5;
+			sourceTree = "<group>";
+		};
+		D2DB0DED275FF3B700C9799F /* Day7 */ = {
+			isa = PBXGroup;
+			children = (
+				D2DB0DEE275FF3C800C9799F /* day7_input.txt */,
+				D2DB0DF2275FF3E600C9799F /* Day7Challenge.swift */,
+				D2DB0DF0275FF3D700C9799F /* Day7View.swift */,
+			);
+			path = Day7;
 			sourceTree = "<group>";
 		};
 		D2F415952758722900C4DE58 /* Screenshots */ = {
@@ -363,6 +380,7 @@
 				D2F415A02758FD5300C4DE58 /* day2_input.txt in Resources */,
 				D2F4159D2758733700C4DE58 /* days_screen.png in Resources */,
 				D206B799275716450025FE55 /* Assets.xcassets in Resources */,
+				D2DB0DEF275FF3C800C9799F /* day7_input.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +415,9 @@
 				D27B5C8A275BC7B600AEC16F /* Day4View.swift in Sources */,
 				D206B7C5275737EB0025FE55 /* Day1Challenge.swift in Sources */,
 				D27B5C8C275BC7C600AEC16F /* Day4Challenge.swift in Sources */,
+				D2DB0DF3275FF3E600C9799F /* Day7Challenge.swift in Sources */,
 				D2F415B2275953D300C4DE58 /* Day3Challenge.swift in Sources */,
+				D2DB0DF1275FF3D700C9799F /* Day7View.swift in Sources */,
 				D206B797275716420025FE55 /* StartView.swift in Sources */,
 				D2F415A42758FECF00C4DE58 /* Day2View.swift in Sources */,
 				D206B795275716420025FE55 /* AdventOfCode2021App.swift in Sources */,
